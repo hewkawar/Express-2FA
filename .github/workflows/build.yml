@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t hewkawar/express_2fa:latest .
+        run: docker build -t hewkawar/express-twofa:latest .
 
       - name: Push Docker image
-        run: docker push hewkawar/express_2fa:latest
+        run: docker push hewkawar/express-twofa:latest
